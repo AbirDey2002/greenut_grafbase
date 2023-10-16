@@ -3,6 +3,7 @@ import Categories from "@/components/Categories";
 import LoadMore from "@/components/LoadMore";
 import ProjectCard from "@/components/ProjectCard";
 import { fetchAllProjects } from "@/lib/actions";
+import Link from "next/link";
 
 type SearchParams = {
   category?: string;
@@ -39,7 +40,7 @@ const Home = async ({ searchParams: { category, endcursor } }: Props) => {
       <section className="flexStart flex-col paddings">
         <Categories />
 
-        <p className="no-result-text text-center">No projects found, go create some first.</p>
+        <p className="no-result-text text-center">No projects found, how about a <span className="text-lime-600 font-medium">NEW</span> one?</p>
       </section>
     )
   }

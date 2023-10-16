@@ -25,7 +25,7 @@ const RelatedProjects = async ({ userId, projectId }: Props) => {
                 </p>
                 <Link
                     href={`/profile/${result?.user?.id}`}
-                    className="text-primary-purple text-base"
+                    className="text-lime-600 text-base"
                 >
                     View All
                 </Link>

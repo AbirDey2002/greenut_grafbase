@@ -43,7 +43,7 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
                                 {projectDetails?.createdBy?.name}
                             </Link>
                             <Image src="/dot.svg" width={4} height={4} alt="dot" />
-                            <Link href={`/?category=${projectDetails.category}`} className="text-primary-purple font-semibold"> 
+                            <Link href={`/?category=${projectDetails.category}`} className="text-lime-600 font-semibold"> 
                                 {projectDetails?.category}
                             </Link>
                         </div>
@@ -73,11 +73,11 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
                 </p>
 
                 <div className="flex flex-wrap mt-5 gap-5">
-                    <Link href={projectDetails?.githubUrl} target="_blank" rel="noreferrer" className="flexCenter gap-2 tex-sm font-medium text-primary-purple">
+                    <Link href={projectDetails?.githubUrl} target="_blank" rel="noreferrer" className="flexCenter gap-2 tex-sm font-medium text-lime-600">
                         🖥 <span className="underline">Github</span> 
                     </Link>
                     <Image src="/dot.svg" width={4} height={4} alt="dot" />
-                    <Link href={projectDetails?.liveSiteUrl} target="_blank" rel="noreferrer" className="flexCenter gap-2 tex-sm font-medium text-primary-purple">
+                    <Link href={projectDetails?.liveSiteUrl} target="_blank" rel="noreferrer" className="flexCenter gap-2 tex-sm font-medium text-lime-600">
                         🚀 <span className="underline">Live Site</span> 
                     </Link>
                 </div>
